@@ -1,0 +1,24 @@
+@import '../Color.scss', '../Mixins.scss';
+
+.container-column-footer {
+    text-align: center;
+    padding: 0 20px;
+    width: 100%;
+    display: grid;
+    grid-auto-rows: 100px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1em;
+}
+
+.container-style-footer {
+    background-color: $blue;
+    border-radius: 8px;
+    opacity: 0.6;
+    a {
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        vertical-align: middle;
+    }
+}
