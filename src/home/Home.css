@@ -3,14 +3,14 @@
 }
 
 .Home-header {
-  background-color: #7230F4;
   height: 150px;
   padding: 20px;
   color: white;
-  -webkit-animation-name: myfirst;
-  -webkit-animation-duration: 6s;
-  animation-name: myfirst;
-  animation-duration: 6s;
+  -webkit-animation-name: Animation;
+  animation:  Animation infinite;
+  -webkit-animation-duration: 7s;
+  animation-name: Animation;
+  animation-duration: 7s;
 }
 
 .Home-title {
@@ -20,22 +20,18 @@
 .Home-intro {
   font-size: large;
 }
-
-.Home:hover {
-  animation: myfirst 4s 2;
-  -webkit-animation: myfirst 4s 2;
+@keyframes Animation {
+  0% { background: #673ab7; }
+  25% { background: #00aaff; }
+  50% { background: #ffc107; }
+  75% { background: #e91e63; }
+  100% { background: #673ab7; }
 }
 
-@keyframes myfirst {
-  0% { background: #00aaff; }
-  25% { background: #673ab7; }
-  75% { background: #ffc107; }
-  100% { background: #e91e63; }
-}
-
-@-webkit-keyframes myfirst {
-  0% { background: #00aaff; }
-  25% { background: #673ab7; }
-  75% { background: #ffc107; }
-  100% { background: #e91e63; } 
+@-webkit-keyframes Animation {
+  0% { background: #673ab7; }
+  25% { background: #00aaff; }
+  50% { background: #ffc107; }
+  75% { background: #e91e63; } 
+  100% { background: #673ab7; }
 }
