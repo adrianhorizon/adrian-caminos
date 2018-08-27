@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import './Home.css';
-import Section from '../section/Section';
-import Footer from '../footer/Footer';
+import React, { Component } from 'react'
+import './Home.css'
+import Section from '../section/Section'
+import Footer from '../footer/Footer'
+import PropTypes from 'prop-types'
 class Home extends Component {
   render() {
-    const name = 'Adrían Camilo Parra Caminos';
     return (
       <div className="Home">
         <header className="Home-header">
-          <h1 className="Home-title">{name}</h1>
+          <h1 className="Home-title">{ this.props.name }</h1>
         </header>
           <Section />
             <Footer /> 
@@ -17,4 +17,8 @@ class Home extends Component {
   }
 }
 
-export default Home;
+Home.propTypes = {
+  name: PropTypes.string.isRequired
+}
+
+export default Home
