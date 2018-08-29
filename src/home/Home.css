@@ -1,9 +1,9 @@
 .Home {
   text-align: center;
+  width: 100%;
 }
 
 .Home-header {
-  height: 150px;
   padding: 20px;
   color: white;
   -webkit-animation-name: Animation;
@@ -14,7 +14,7 @@
 }
 
 .Home-title {
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 
 .Home-intro {
@@ -24,7 +24,7 @@
   0% { background: #673ab7; }
   25% { background: #00aaff; }
   50% { background: #ffc107; }
-  75% { background: #e91e63; }
+  75% { background: #FF5533; }
   100% { background: #673ab7; }
 }
 
@@ -32,6 +32,18 @@
   0% { background: #673ab7; }
   25% { background: #00aaff; }
   50% { background: #ffc107; }
-  75% { background: #e91e63; } 
+  75% { background: #FF5533; } 
   100% { background: #673ab7; }
+}
+
+.loco {
+  color:#4286F4;
+  color:#806CF0;
+  color:#16F1B4;
+  color:#2FD0C8;
+  color:#BE06C5;
+  color:#FF5533;
+  color:#FF4423;
+  color:#FDFD56;
+  color: #1D55FF;
 }

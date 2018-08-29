@@ -1,28 +1,32 @@
 .Section {
-    text-align: center;
-    width: 100%;
+    width: 90%;
+    border-radius: 8px;
+    margin: 0 auto;
+    background-color: blueviolet;
 }
 
 .Section-header {
-    background-color: blueviolet;
-    height: 50px;
-    padding: 10px;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 1em;
 }
 
 .Section-title {
-    font-size: 1.5em;
+    padding: 10px;
+    font-size: 2em;
     color: white;
 }
 
-.Section-intro {
-    background-color: blueviolet;
-    padding: 20px;
-    font-size: 1.2em;
-    height: 150px;
+.Section-cell {
+    display: table-cell;
     color: white;
 }
 
-ul {
-    float: left;
-    list-style: none;
+@media (max-width: 600px) {
+    .Section,
+    .Section-cell {
+        display: block;
+        background-color: #00aaff;
+    }
 }
