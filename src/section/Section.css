@@ -2,7 +2,11 @@
     width: 90%;
     border-radius: 8px;
     margin: 0 auto;
-    background-color: blueviolet;
+    -webkit-animation-name: Section;
+    animation: Section infinite;
+    -webkit-animation-duration: 12s;
+    animation-name: Section;
+    animation-duration: 12s;
 }
 
 .Section-header {
@@ -23,10 +27,37 @@
     color: white;
 }
 
+.icons {
+    width: 100px;
+}
+
+.icons-cloud {
+    width: 42px;
+}
+
+.icons-ionic {
+    width: 62px;
+}
+
+@keyframes Section {
+    0% { background: #1D55FF; }
+    25% { background: #0064FF; }
+    50% { background: #2FD0C8; }
+    75% { background: #00aaff; }
+    100% { background: #1D55FF; }
+  }
+  
+  @-webkit-keyframes Section {
+    0% { background: #1D55FF; }
+    25% { background: #0064FF; }
+    50% { background: #2FD0C8; }
+    75% { background: #00aaff; } 
+    100% { background: #1D55FF; }
+  }
+
 @media (max-width: 600px) {
     .Section,
     .Section-cell {
         display: block;
-        background-color: #00aaff;
     }
 }

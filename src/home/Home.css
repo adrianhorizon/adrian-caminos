@@ -8,9 +8,9 @@
   color: white;
   -webkit-animation-name: Animation;
   animation:  Animation infinite;
-  -webkit-animation-duration: 7s;
+  -webkit-animation-duration: 12s;
   animation-name: Animation;
-  animation-duration: 7s;
+  animation-duration: 12s;
 }
 
 .Home-title {
@@ -22,22 +22,22 @@
 }
 @keyframes Animation {
   0% { background: #673ab7; }
-  25% { background: #00aaff; }
-  50% { background: #ffc107; }
-  75% { background: #FF5533; }
+  25% { background: #7410A9; }
+  50% { background: #7D11B6; }
+  75% { background: #620E8F; }
   100% { background: #673ab7; }
 }
 
 @-webkit-keyframes Animation {
   0% { background: #673ab7; }
-  25% { background: #00aaff; }
-  50% { background: #ffc107; }
-  75% { background: #FF5533; } 
+  25% { background: #7410A9; }
+  50% { background: #7D11B6; }
+  75% { background: #620E8F; } 
   100% { background: #673ab7; }
 }
 
 .loco {
-  color:#4286F4;
+  color:rgb(81, 140, 235);
   color:#806CF0;
   color:#16F1B4;
   color:#2FD0C8;
