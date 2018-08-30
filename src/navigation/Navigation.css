@@ -1,0 +1,47 @@
+.Navigation-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+    font-weight: 600;
+    -webkit-animation-name: Animation;
+    animation:  Animation infinite;
+    -webkit-animation-duration: 12s;
+    animation-name: Animation;
+    animation-duration: 12s;
+    }
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #1D55FF;
+    border-radius: 8px;
+    transition: 8s ease;
+}
+
+@keyframes Animation {
+    0% { background: #673ab7; }
+    25% { background: #7410A9; }
+    50% { background: #7D11B6; }
+    75% { background: #620E8F; }
+    100% { background: #673ab7; }
+  }
+  
+  @-webkit-keyframes Animation {
+    0% { background: #673ab7; }
+    25% { background: #7410A9; }
+    50% { background: #7D11B6; }
+    75% { background: #620E8F; } 
+    100% { background: #673ab7; }
+  }
