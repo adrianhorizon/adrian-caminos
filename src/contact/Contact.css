@@ -1,0 +1,15 @@
+.Contact {
+    text-align: center;
+    width: 100%;
+}
+
+.Contact-header {
+    background-color: #00aaff;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.Contact-cell {
+    display: table-cell;
+    color: white;
+}
