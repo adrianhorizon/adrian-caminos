@@ -3,9 +3,9 @@ import { initReactI18next } from "react-i18next";
 
 import es from '../i18n/es';
 import en from '../i18n/en';
-import br from '../i18n/br';
+import pt from '../i18n/pt';
 
-const resources = { es, en, br };
+const resources = { es, en, pt };
 
 i18n
   .use(initReactI18next)

@@ -1,0 +1,52 @@
+@import '../Color.scss', '../Mixins.scss';
+
+.container-section {
+	padding: 5px;
+	max-width: 960px;
+	width: 95%;
+	margin: 20px auto;
+}
+
+.title-section {
+	color: $grey-font;
+	font-weight: bold;
+}
+
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.column {
+	flex: 1;
+	border: 1px solid gray;
+	margin: 5px;
+	padding: 10px;
+	border-radius: 10px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+	
+}
+
+@include breakpoint(max-width, large) {
+  .columns .column {
+		margin-bottom: 5px;
+    flex-basis: 40%;
+		&:nth-last-child(2) {
+			margin-right: 0;
+		}
+		&:last-child {
+			flex-basis: 100%;
+			margin: 0;
+		}
+	}
+}
+
+@include breakpoint(max-width, medium) {
+	.columns .column {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+}

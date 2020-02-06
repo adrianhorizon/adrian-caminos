@@ -1,14 +1,19 @@
 {
   "name": "adrian-caminos",
   "version": "1.0.0",
-  "description": "",
+  "description": "cv adrian caminos",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
+    "predeploy": "npm run build && cp CNAME build/CNAME",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+      "React",
+      "Webpack",
+      "I18n"
+  ],
   "author": "adrianhorizon",
   "license": "ISC",
   "private": true,

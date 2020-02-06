@@ -1,0 +1,24 @@
+name: AdrianCaminosCI
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x]
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install Packages
+      run: npm install
+    - name: Deploy to GH Pages
+      run: |
+        git config --global user.email "camilod4568@gmail.com>"
+        git config --global user.name "adrianhorizon"
+        git remote set-url origin 34457e0314e6c546deadc35d4a8a7db57b2331f7@github.com/adrianhorizon/adrian-caminos.git

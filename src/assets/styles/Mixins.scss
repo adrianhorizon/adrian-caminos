@@ -1,0 +1,17 @@
+$small-size: 480px;
+$medium-size: 768px;
+$large-sisze: 1024px;
+
+$breakpoints: (
+    small: $small-size,
+    medium: $medium-size,
+    large: $large-sisze
+) !default;
+
+@mixin breakpoint($size-width, $size) {
+    $breakpoint-value: map-get($breakpoints, $size);
+
+    @media screen and($size-width: $breakpoint-value) {
+        @content;
+    }
+}

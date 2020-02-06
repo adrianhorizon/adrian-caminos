@@ -1,8 +1,12 @@
-header {
-    background: rgb(49, 53, 208);
-    background: linear-gradient(225deg, rgba(49, 53, 208, 1) 0%, rgba(49, 106, 208, 1) 35%);
-    height: 20vh;
+@import '../Color.scss', '../Mixins.scss';
+
+.container-header {
     padding-top: 40px;
+    width: 100%;
+    height: 80vh;
+    background-image: url(https://kitwiissy.s3.amazonaws.com/homeBlue.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .inner {
@@ -12,73 +16,89 @@ header {
     position: relative;
 }
 
-.logo {
-    text-decoration: none;
-    color: #777;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 40px;
+.container-select {
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    color: $blue-bg;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.image-country {
+    width: 24px;
+    margin: 0px 10px;
+    vertical-align: middle;
 }
 
 ul li {
     list-style-type: none;
 }
 
-nav>ul {
-    float: right;
-}
+nav {
+    >ul {
+        float: right;
 
-nav>ul>li {
-    text-align: center;
-    line-height: 40px;
-    margin-left: 70px;
-}
+        >li {
+            text-align: center;
+            line-height: 40px;
+            margin-left: 60px;
+        }
 
-nav>ul li ul li {
-    width: 100%;
-    text-align: left;
-}
+        li ul li {
+            width: 100%;
+            text-align: left;
+        }
+    }
 
-nav ul li:hover {
-    cursor: pointer;
-    position: relative;
-}
+    ul li:hover {
+        cursor: pointer;
+        position: relative;
 
-nav ul li:hover>ul {
-    display: block;
-}
+        > {
+            ul {
+                display: block;
+            }
 
-nav ul li:hover>a {
-    color: #777;
-}
+            a {
+                color: $grey-font;
+            }
+        }
+    }
 
-nav>ul>li>a {
-    cursor: pointer;
-    display: block;
-    outline: none;
-    width: 100%;
-    text-decoration: none;
-}
+    >ul>li {
+        >a {
+            cursor: pointer;
+            display: block;
+            outline: none;
+            width: 100%;
+            text-decoration: none;
+            transition: 0.5s;
+        }
 
-nav>ul>li {
-    float: left;
-}
+        float: left;
+    }
 
-nav a {
-    color: white;
-}
+    a {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+    }
 
-nav>ul li ul {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 100%;
-    z-index: 2000;
-}
+    >ul li ul {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        z-index: 2000;
 
-nav>ul li ul li>a {
-    text-decoration: none;
+        li>a {
+            text-decoration: none;
+        }
+    }
 }
 
 [type="checkbox"],
@@ -86,71 +106,129 @@ label {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+.row-header {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column-header {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.text-column {
+    height: auto;
+
+    h1 {
+        font-size: 55px;
+        color: white;
+        font-weight: bold;
+    }
+}
+
+.image-column {
+    height: auto;
+}
+
+.container-button {
+    padding: 20px;
+    border: none;
+    background: $blue;
+    border-radius: 20px;
+    width: 140px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.9;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+@include breakpoint(min-width, medium) {
+    .column-header {
+        flex: 1
+    }
+}
+
+@include breakpoint(max-width, large) {
+    .container-header {
+        height: auto ;
+    }
+}
+
+@include breakpoint(max-width, medium) {
+
     nav ul {
         display: none;
     }
 
     label {
         display: block;
-        background: #222;
+        background: transparent;
         width: 40px;
         height: 40px;
         cursor: pointer;
         position: absolute;
         right: 20px;
         top: 0px;
-    }
 
-    label:after {
-        content: '';
-        display: block;
-        width: 30px;
-        height: 5px;
-        background: #777;
-        margin: 7px 5px;
-        box-shadow: 0px 10px 0px #777, 0px 20px 0px #777
+        &:after {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 5px;
+            background: white;
+            margin: 7px 5px;
+            box-shadow: 0px 10px 0px white, 0px 20px 0px white;
+        }
     }
 
     [type="checkbox"]:checked~ul {
         display: block;
         z-index: 9999;
         position: absolute;
+        background-color: white;
+        border-radius: 30px;
         right: 20px;
         left: 20px;
     }
 
-    nav a {
-        color: #777;
-    }
+    nav {
+        a {
+            color: $blue-bg;
+        }
 
-    nav ul li {
-        display: block;
-        float: none;
-        width: 100%;
-        text-align: left;
-        background: #222;
-        text-indent: 20px;
-    }
+        ul li {
+            display: block;
+            float: none;
+            width: 100%;
+            text-align: left;
+        }
 
-    nav>ul>li {
-        margin-left: 0px;
-    }
+        >ul {
+            >li {
+                margin-left: 0px;
+            }
 
-    nav>ul li ul li {
-        display: block;
-        float: none;
-    }
+            li ul {
+                li {
+                    display: block;
+                    float: none;
+                }
 
-    nav>ul li ul {
-        display: block;
-        position: relative;
-        width: 100%;
-        z-index: 9999;
-        float: none;
-    }
-
-    h1 {
-        font-size: 26px;
+                display: block;
+                position: relative;
+                width: 100%;
+                z-index: 9999;
+                float: none;
+            }
+        }
     }
 }
