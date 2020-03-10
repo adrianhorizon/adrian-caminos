@@ -8,15 +8,15 @@ import pt from '../i18n/pt';
 const resources = { es, en, pt };
 
 i18n
-  .use(initReactI18next)
-  .init({
-    resources,
-    lng: "es",
-    fallbackLng: "es",
-    interpolation: {
-      escapeValue: false
-    }
-  });
+    .use(initReactI18next)
+    .init({
+        resources,
+        lng: "es",
+        fallbackLng: "es",
+        interpolation: {
+            escapeValue: false
+        }
+    });
 
 
 export default i18n;

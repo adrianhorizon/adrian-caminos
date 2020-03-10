@@ -6,13 +6,13 @@
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
-    "predeploy": "npm run build && cp CNAME build/CNAME",
+    "homepage": "https://adrianhorizon.github.io/adrian-caminos/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-      "React",
-      "Webpack",
-      "I18n"
+    "React",
+    "Webpack",
+    "I18n"
   ],
   "author": "adrianhorizon",
   "license": "ISC",

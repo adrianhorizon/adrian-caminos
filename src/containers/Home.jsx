@@ -3,11 +3,11 @@ import Section from '../components/Section';
 import '../assets/styles/App.scss';
 
 const Home = () => {
-  return (
-    <>
-      <Section />
-    </>
-  );
+    return (
+        <>
+            <Section />
+        </>
+    );
 }
 
 export default Home;

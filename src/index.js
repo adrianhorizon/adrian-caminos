@@ -4,6 +4,6 @@ import App from './routes/App';
 import './utils/i18n';
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('app')
+    <App />,
+    document.getElementById('app')
 );
