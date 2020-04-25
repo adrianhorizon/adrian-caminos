@@ -5,7 +5,7 @@
     padding: 0 20px;
     width: 100%;
     display: grid;
-    grid-auto-rows: 100px;
+    grid-auto-rows: 30px;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 1em;
 }
@@ -14,6 +14,7 @@
     background-color: $blue;
     border-radius: 8px;
     opacity: 0.6;
+
     a {
         color: white;
         font-size: 16px;

@@ -14,7 +14,7 @@
 }
 
 .color-developer-parrafe {
-    color: #52616b;
+    color: $black-font-bg;
     line-height: 36px;
 }
 
@@ -27,9 +27,9 @@
 .container-code-figures .card {
     position: relative;
     width: 480px;
-    height: 360px;
+    height: 380px;
     transform: rotate3d(.5, -.866, 0, 15deg) rotateZ(1deg);
-    box-shadow: 27.1px 62.5px 125px -25px rgba(50, 50, 93, .5), 16.2px 37.5px 75px -37.5px rgba(0, 0, 0, .6);
+    box-shadow: 27.1px 62.5px 125px -25px #32325d80, 16.2px 37.5px 75px -37.5px #00000099;
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -50,23 +50,22 @@
     flex-shrink: 0;
 }
 
-.container-code-figures .tabs li.active {
-    background: #481380;
-    border-color: #525f7f;
+.container-code-figures .tabs .container-list-tabs.active {
+    background: $ligth-purple;
+    border-color: $ligth-purple;
     border-bottom-color: transparent;
     color: #fff;
     border-radius: 8px 8px 0 0;
-    box-shadow: 0 -10px 0 #232341;
     position: relative;
     z-index: 2;
 }
 
-.container-code-figures .tabs li {
+.container-code-figures .tabs .container-list-tabs {
     flex: 1 0 calc(100% / (var(--codes-count) + 1));
     margin-left: -1px;
     font-size: 16px;
     font-weight: 500;
-    color: #aab7c4;
+    color: $grey-font;
     text-align: center;
     line-height: 50px;
     white-space: nowrap;
@@ -76,11 +75,12 @@
     transition: all var(--transition-duration);
 }
 
-.container-code-figures .tabs li:hover {
+.container-code-figures .tabs .container-list-tabs:hover {
     transition-duration: .10s;
-    background: #9a9aff;
+    background: $ligth-purple;
     border-radius: 5px;
     color: #fff;
+    opacity: 0.6;
 }
 
 .container-code-figures .code-container {
@@ -97,7 +97,7 @@
     transition: transform var(--transition-duration);
 }
 
-.container-code-figures .code li {
+.container-code-figures .code .container-list-tabs {
     width: calc(100% / var(--codes-count));
     padding: 25px 30px;
     font-size: 14px;
@@ -105,18 +105,12 @@
     transition: opacity var(--transition-duration);
 }
 
-.container-code-figures .code li.active {
+.container-code-figures .code .container-list-tabs.active {
     opacity: 1;
 }
 
 .container-code-figures .shine {
-    background: linear-gradient(to top left, hsla(0, 0%, 100%, 0) 20%, hsla(0, 0%, 100%, .5) 70%, #fff);
-    opacity: .2;
-    z-index: 10;
-}
-
-.container-code-figures .shine {
-    background: linear-gradient(to top left, hsla(0, 0%, 100%, 0) 20%, hsla(0, 0%, 100%, .5) 70%, #fff);
+    background: linear-gradient(to top left, #ffffff00 20%, #ffffff80 70%, #fff);
     opacity: .2;
     z-index: 10;
 }
@@ -134,13 +128,16 @@
     margin: 0;
 }
 
-.code .token.comment {
-    font-weight: 400;
-    color: #6b7c93;
+.keyword {
+    line-height: 20px;
 }
 
-.code .token.keyword {
-    color: #7795f8;
+.keywordOdd {
+    color: $blue-bg;
+}
+
+.keywordAdd {
+    color: $green;
 }
 
 .main-container-figure,

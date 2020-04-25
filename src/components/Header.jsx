@@ -7,6 +7,7 @@ import '../assets/styles/components/Header.scss';
 const Header = () => {
     const [t, i18n] = useTranslation()
     const [country, setCountry] = useState('es')
+    const whatsapp = 'https://api.whatsapp.com/send?phone=573223112099&text=Hola%20En%20que%20te%20puedo%20ayudar&source=&data=&app_absent='
 
     return (
         <>
@@ -39,11 +40,14 @@ const Header = () => {
                             </li>
                         </ul>
                     </nav>
+
                     <div className='row-header'>
                         <div className='column-header'>
                             <div className='text-column'>
                                 <h1>{t('TITLE')}</h1>
-                                <button className="container-button">{t('MENU.HIRE_ME')}</button>
+                                <a className="container-button" href={whatsapp} rel="noreferrer noopener" target="_blank">
+                                    {t('MENU.HIRE_ME')}
+                                </a>
                             </div>
                         </div>
                         <div className='column-header'>

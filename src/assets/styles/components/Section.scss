@@ -1,53 +1,61 @@
 @import '../Color.scss', '../Mixins.scss';
 
 .container-section {
-	padding: 20px;
-	max-width: 960px;
-	width: 95%;
+    padding: 20px;
+    max-width: 960px;
+    width: 95%;
     margin: 20px auto;
     background-color: white;
     border-radius: 8px;
 }
 
 .title-section {
-	color: $purple;
-	font-weight: bold;
+    color: $purple;
+    font-weight: bold;
 }
 
 .columns {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	margin: 5px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
 }
 
 .column {
-	flex: 1;
-	margin: 5px;
-	padding: 10px;
-	border-radius: 10px;
-	&:first-child { margin-left: 0; }
-	&:last-child { margin-right: 0; }
-	
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
 }
 
 @include breakpoint(max-width, large) {
-  .columns .column {
-		margin-bottom: 5px;
-    flex-basis: 40%;
-		&:nth-last-child(2) {
-			margin-right: 0;
-		}
-		&:last-child {
-			flex-basis: 100%;
-			margin: 0;
-		}
-	}
+    .columns .column {
+        margin-bottom: 5px;
+        flex-basis: 40%;
+
+        &:nth-last-child(2) {
+            margin-right: 0;
+        }
+
+        &:last-child {
+            flex-basis: 100%;
+            margin: 0;
+        }
+    }
 }
 
 @include breakpoint(max-width, medium) {
-	.columns .column {
-		flex-basis: 100%;
-		margin: 0 0 5px 0;
-	}
+    .columns .column {
+        flex-basis: 100%;
+        margin: 0 0 5px 0;
+    }
 }

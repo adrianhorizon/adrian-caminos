@@ -3,7 +3,8 @@ import { useTranslation } from 'react-i18next';
 import '../assets/styles/components/Section.scss';
 
 const Section = () => {
-    const [t, i18n] = useTranslation()
+    const [t] = useTranslation()
+
     return (
         <>
             <div className="container-section">

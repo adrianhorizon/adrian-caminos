@@ -1,43 +1,51 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import '../assets/styles/components/SectionProfile.scss';
+import { TAB_ITEMS } from '../utils/constant';
 
-const SectionProfile = () =>  {
-    const [t, i18n] = useTranslation()
-    return(
+const SectionProfile = () => {
+    const [t] = useTranslation();
+    const [active, setActive] = useState(0);
+
+    useEffect(() => {
+        const next = (active + 1) % TAB_ITEMS.length;
+        const id = setTimeout(() => setActive(next), 5000);
+        return () => clearTimeout(id);
+    }, [active]);
+
+    return (
         <>
             <div className="flexbox-code">
                 <article className="main-container-code">
                     <h2 className="color-developer-title">{t('ME.DEVELOPER')}</h2>
-                    <p className="color-developer-parrafe">
-                    {t('ME.TITLE')}
-                    <br/><br/>
-                    {t('ME.SUBTITLE')}
-                    <br/><br/>
-                    {t('ME.DESCRIPTION')}
-                    <br/><br/>
-                    {t('ME.PARRAFE')}
-                    </p>
+                    <div className="color-developer-parrafe">
+                        <p>{t('ME.TITLE')}</p>
+                        <p>{t('ME.SUBTITLE')}</p>
+                        <p>{t('ME.DESCRIPTION')}</p>
+                        <p>{t('ME.PARRAFE')}</p>
+                    </div>
                 </article>
                 <section className="main-container-figure">
                     <figure className="container-code-figures floating-cards">
                         <div className="card">
                             <ul className="tabs">
-                                <li>Skills</li>
-                                <li>Front end</li>
-                                <li>Back end</li>
-                                <li>Dev Ops</li>
+                                {TAB_ITEMS.map(({ id, title }) =>
+                                    <TabItemComponent
+                                        styleClass={'container-list-tabs'}
+                                        key={id}
+                                        title={title}
+                                        onItemClicked={() => setActive(id)}
+                                        isActive={active === id}
+                                    />
+                                )}
                             </ul>
                             <div className="code-container">
                                 <ul className="code" style={{ transform: "translateX(0%)" }}>
-                                    <li className="active">
-                                        <span className="token comment">// Skills</span><br/>
-                                        <span className="token keyword" style={{color: "#45b2e8"}}>React native</span><br/>
-                                        <span className="token function" style={{color: "#3ecf8e"}}>Angular</span>
+                                    <li className="container-list-tabs active">
+                                        {TAB_ITEMS.map(({ id, content }) => {
+                                            return active === id ? <TabContentComponent key={id} value={content} /> : ''
+                                        })}
                                     </li>
-                                    <li>Front end</li>
-                                    <li>Back end</li>
-                                    <li>Dev Ops</li>
                                 </ul>
                             </div>
                             <div className="shine"></div>
@@ -47,6 +55,29 @@ const SectionProfile = () =>  {
             </div>
         </>
     );
-}
+};
+
+const TabItemComponent = ({
+    styleClass = '',
+    title = '',
+    onItemClicked = () => console.error('You passed no action to the component'),
+    isActive = false,
+}) => {
+    return (
+        <li className={`${styleClass} ${isActive ? `${styleClass} active` : ''}`} onClick={onItemClicked}>{title}</li>
+    );
+};
+
+const TabContentComponent = ({ value, }) => {
+    return (
+        <>
+            {Object.keys(value).map(key =>
+                <div key={key}>
+                    <p className={`token keyword ${key % 2 == 0 ? 'keywordOdd' : 'keywordAdd'}`}>- {value[key]}</p>
+                </div>
+            )}
+        </>
+    );
+};
 
 export default SectionProfile;

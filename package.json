@@ -1,7 +1,7 @@
 {
   "name": "adrian-caminos",
-  "version": "1.2.0",
-  "description": "portafilio adrian camilo caminos",
+  "version": "1.1.0",
+  "description": "portafolio adrian camilo caminos",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
@@ -14,7 +14,7 @@
     "Webpack",
     "I18n"
   ],
-  "author": "adrian camilo caminos",
+  "author": "Adrían Camilo Caminos",
   "license": "ISC",
   "private": true,
   "dependencies": {
