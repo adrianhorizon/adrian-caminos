@@ -29,7 +29,7 @@ const Section = () => {
 
                 <section className="columns">
                     <div className="column">
-                        <h2>blog para medios sociales</h2>
+                        <h2>blog medios sociales</h2>
                         <img width="100%" src="https://kitwiissy.s3.amazonaws.com/works/lideres.png" alt="lideres adrian caminos" />
                     </div>
 
