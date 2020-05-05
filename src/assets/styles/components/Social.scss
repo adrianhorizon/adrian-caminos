@@ -1,0 +1,52 @@
+@import '../Color.scss', '../Mixins.scss';
+
+.buttons-container {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+    flex-wrap: wrap;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.github {
+    &:hover {
+        background: $black-font;
+    }
+}
+
+.linkedin {
+    &:hover {
+        background: $linkedin;
+    }
+}
+
+.medium {
+    &:hover {
+        background: $medium;
+    }
+}
+
+.youtube {
+    &:hover {
+        background: $youtube;
+    }
+}

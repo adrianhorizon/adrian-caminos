@@ -11,10 +11,12 @@
 
 .color-developer-title {
     color: $dark-purple;
+    font-size: 24px;
 }
 
 .color-developer-parrafe {
     color: $black-font-bg;
+    margin-top: 26px;
     line-height: 36px;
 }
 
@@ -140,21 +142,67 @@
     color: $green;
 }
 
-.main-container-figure,
-.main-container-code {
-    flex: 1 1 auto;
-    padding: 15px;
-    margin: 20px 10px;
-}
-
 @include breakpoint(min-width, small) {
     .container-code-figures {
         transform: none;
         margin: 20px 0;
     }
+}
 
-    .flexbox-code {
-        display: -webkit-flex;
-        display: flex;
+.wrapper-figure {
+    padding: 5px;
+    max-width: 100%;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.columns-container-figure {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.main-container-figure {
+    flex: 1;
+    margin: 2px;
+    padding: 10px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+}
+
+@include breakpoint(max-width, large) {
+    .columns-container-figure .main-container-figure {
+        margin-bottom: 5px;
+        flex-basis: 40%;
+
+        &:nth-last-child(2) {
+            margin-right: 0;
+        }
+
+        &:last-child {
+            flex-basis: 100%;
+            margin: 0;
+        }
+    }
+}
+
+@include breakpoint(max-width, medium) {
+    .columns-container-figure .main-container-figure {
+        flex-basis: 100%;
+        margin: 0 0 5px 0;
+    }
+}
+
+@include breakpoint(max-width, small) {
+    .main-container-figure .card {
+        display: none;
     }
 }

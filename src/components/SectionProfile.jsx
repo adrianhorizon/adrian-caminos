@@ -15,42 +15,44 @@ const SectionProfile = () => {
 
     return (
         <>
-            <div className="flexbox-code">
-                <article className="main-container-code">
-                    <h2 className="color-developer-title">{t('ME.DEVELOPER')}</h2>
-                    <div className="color-developer-parrafe">
-                        <p>{t('ME.TITLE')}</p>
-                        <p>{t('ME.SUBTITLE')}</p>
-                        <p>{t('ME.DESCRIPTION')}</p>
-                        <p>{t('ME.PARRAFE')}</p>
-                    </div>
-                </article>
-                <section className="main-container-figure">
-                    <figure className="container-code-figures floating-cards">
-                        <div className="card">
-                            <ul className="tabs">
-                                {TAB_ITEMS.map(({ id, title }) =>
-                                    <TabItemComponent
-                                        styleClass={'container-list-tabs'}
-                                        key={id}
-                                        title={title}
-                                        onItemClicked={() => setActive(id)}
-                                        isActive={active === id}
-                                    />
-                                )}
-                            </ul>
-                            <div className="code-container">
-                                <ul className="code" style={{ transform: "translateX(0%)" }}>
-                                    <li className="container-list-tabs active">
-                                        {TAB_ITEMS.map(({ id, content }) => {
-                                            return active === id ? <TabContentComponent key={id} value={content} /> : ''
-                                        })}
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="shine"></div>
+            <div className="wrapper-figure">
+                <section class="columns-container-figure">
+                    <div className="main-container-figure">
+                        <h2 className="color-developer-title">{t('ME.DEVELOPER')}</h2>
+                        <div className="color-developer-parrafe">
+                            <p>{t('ME.TITLE')}</p>
+                            <p>{t('ME.SUBTITLE')}</p>
+                            <p>{t('ME.DESCRIPTION')}</p>
+                            <p>{t('ME.PARRAFE')}</p>
                         </div>
-                    </figure>
+                    </div>
+                    <div className="main-container-figure">
+                        <figure className="container-code-figures floating-cards">
+                            <div className="card">
+                                <ul className="tabs">
+                                    {TAB_ITEMS.map(({ id, title }) =>
+                                        <TabItemComponent
+                                            styleClass={'container-list-tabs'}
+                                            key={id}
+                                            title={title}
+                                            onItemClicked={() => setActive(id)}
+                                            isActive={active === id}
+                                        />
+                                    )}
+                                </ul>
+                                <div className="code-container">
+                                    <ul className="code" style={{ transform: "translateX(0%)" }}>
+                                        <li className="container-list-tabs active">
+                                            {TAB_ITEMS.map(({ id, content }) => {
+                                                return active === id ? <TabContentComponent key={id} value={content} /> : ''
+                                            })}
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className="shine"></div>
+                            </div>
+                        </figure>
+                    </div>
                 </section>
             </div>
         </>

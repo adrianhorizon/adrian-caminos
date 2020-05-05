@@ -9,10 +9,10 @@ const App = () => (
         <Layout>
             <Switch>
                 <Route exact path="/" component={Home} />
-                <Route component={NotFound} />
+                <Route path="*" component={NotFound} />
             </Switch>
         </Layout>
     </BrowserRouter>
-)
+);
 
 export default App;
