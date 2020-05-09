@@ -65,6 +65,7 @@
     padding: 5px;
     background-color: white;
     border-radius: 5px;
+    font-size: 14px;
     color: $blue-bg;
 
     &:focus {
@@ -203,7 +204,6 @@
 
         .nav-toggle {
             display: block;
-            position: fixed;
             right: 1rem;
             top: 1rem;
             width: 2.5rem;

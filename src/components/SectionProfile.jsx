@@ -15,7 +15,7 @@ const SectionProfile = () => {
 
     return (
         <>
-            <div className="wrapper-figure">
+            <div name="works" className="wrapper-figure">
                 <section class="columns-container-figure">
                     <div className="main-container-figure">
                         <h2 className="color-developer-title">{t('ME.DEVELOPER')}</h2>

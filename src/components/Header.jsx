@@ -12,7 +12,7 @@ const Header = () => {
 
     return (
         <>
-            <header className="header">
+            <header name="home" className="header">
                 <nav className="navbar">
                     <Link className="logo" to="/">
                         <img width="40" src="https://kitwiissy.s3.amazonaws.com/wiissywhite.png" alt="encuentrame como wiissy de adrian caminos" />
@@ -25,10 +25,10 @@ const Header = () => {
                     </label>
                     <div className="wrapper">
                         <ul className="menu">
-                            <li className="menu-item"><Link to="/">{t('MENU.HOME')}</Link></li>
-                            <li className="menu-item"><Link to="/">{t('MENU.WORKS')}</Link></li>
-                            <li className="menu-item"><Link to="/">{t('MENU.BLOG')}</Link></li>
-                            <li className="menu-item"><Link to="/">{t('MENU.CONTACT')}</Link></li>
+                            <li className="menu-item"><a href="#home">{t('MENU.HOME')}</a></li>
+                            <li className="menu-item"><a href="#works">{t('MENU.WORKS')}</a></li>
+                            <li className="menu-item"><a href="https://medium.com/@adrianhorizon" target="_blank">{t('MENU.BLOG')}</a></li>
+                            <li className="menu-item"><a href="#contact">{t('MENU.CONTACT')}</a></li>
                             <li className="menu-item">
                                 <a href="#">
                                     <select
