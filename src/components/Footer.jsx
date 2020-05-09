@@ -4,7 +4,7 @@ import '../assets/styles/components/Footer.scss';
 
 const Footer = () => (
     <footer>
-        <a aria-label="Adrian" rel="noopener noreferrer" href="#">&copy; Adrìan Camilo Caminos - 2020</a>
+        <a aria-label="Adrian caminos" rel="noopener noreferrer" href="#">&copy; Adrían Camilo Caminos - 2020</a>
         <Social />
     </footer>
 );
