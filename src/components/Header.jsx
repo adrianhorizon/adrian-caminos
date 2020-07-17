@@ -57,7 +57,9 @@ const Header = () => {
                                     {t('MENU.HIRE_ME')}
                                 </a>
                             </div>
-                            <Social />
+                            <div className="social-align">
+                                <Social />
+                            </div>
                         </div>
                     </div>
                     <div className="column-header">

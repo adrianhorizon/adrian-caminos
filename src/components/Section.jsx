@@ -9,42 +9,45 @@ const Section = () => {
         <>
             <div className="container-section">
                 <h1 className="title-section">{t('WORK.TITLE')}</h1>
-                <section className="columns">
-                    <div className="column">
-                        <h2>Pokedex</h2>
-                        <img width="100%" src="https://kitwiissy.s3.amazonaws.com/works/pokedex.png" alt="pokedex angular adrian caminos" />
+                <div className="columns">
+                    <div className="box column">
+                        <div className="img-box-1">
+                        </div>
+                        <div className="text">Pokedex</div>
                     </div>
 
-                    <div className="column">
-                        <h2>Wheater aplication</h2>
-                        <img width="100%" src="https://kitwiissy.s3.amazonaws.com/works/wheater.png" alt="wheater angular adrian caminos" />
+                    <div className="box column">
+                        <div className="img-box-2">
+                        </div>
+                        <div className="text">Citys Wheater</div>
                     </div>
 
-                    <div className="column">
-                        <h2>Eccomerce simple project</h2>
-                        <img width="100%" src="https://kitwiissy.s3.amazonaws.com/works/market.png" alt="market angular adrian caminos" />
+                    <div className="box column">
+                        <div className="img-box-3">
+                        </div>
+                        <div className="text">Market Place</div>
+                    </div>
+                </div>
+
+                <div className="columns">
+                    <div className="box column">
+                        <div className="img-box-4">
+                        </div>
+                        <div className="text">Lideres en la lucha</div>
                     </div>
 
-                </section>
-
-                <section className="columns">
-                    <div className="column">
-                        <h2>blog medios sociales</h2>
-                        <img width="100%" src="https://kitwiissy.s3.amazonaws.com/works/lideres.png" alt="lideres adrian caminos" />
+                    <div className="box column">
+                        <div className="img-box-5">
+                        </div>
+                        <div className="text">Lupe</div>
                     </div>
 
-                    <div className="column">
-                        <h2>Intranet para Rappi</h2>
-                        <img width="100%" src="https://kitwiissy.s3.amazonaws.com/works/lupe.png" alt="lupe adrian caminos" />
+                    <div className="box column">
+                        <div className="img-box-6">
+                        </div>
+                        <div className="text">SoyRappi</div>
                     </div>
-
-                    <div className="column">
-                        <h2>soyRappi landing page</h2>
-                        <img width="100%" src="https://kitwiissy.s3.amazonaws.com/works/soyRappi.png" alt="soyRappi adrian caminos" />
-                    </div>
-
-                </section>
-
+                </div>
             </div>
         </>
     );

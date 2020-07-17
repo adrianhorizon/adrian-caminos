@@ -2,16 +2,26 @@
 
 .container-section {
     padding: 20px;
-    max-width: 960px;
-    width: 95%;
+    max-width: 90%;
+    width: 100%;
     margin: 20px auto;
-    background-color: white;
     border-radius: 8px;
 }
 
 .title-section {
     color: $purple;
     font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text {
+    padding: 30px 0;
+    width: auto;
+    height: auto;
+    color: $purple;
+    font-weight: bold;
+    text-align: center;
+    animation: colorchange 9s infinite alternate;
 }
 
 .columns {
@@ -58,4 +68,78 @@
         flex-basis: 100%;
         margin: 0 0 5px 0;
     }
+}
+
+.img-box-1 {
+    @include box;
+    background-image: url(https://kitwiissy.s3.amazonaws.com/works/pokedex.png);
+}
+
+.img-box-2 {
+    @include box;
+    background-image: url(https://kitwiissy.s3.amazonaws.com/works/wheater.png);
+}
+
+.img-box-3 {
+    @include box;
+    background-image: url(https://kitwiissy.s3.amazonaws.com/works/market.png);
+}
+
+.img-box-4 {
+    @include box;
+    background-image: url(https://kitwiissy.s3.amazonaws.com/works/lideres.png);
+}
+
+.img-box-5 {
+    @include box;
+    background-image: url(https://kitwiissy.s3.amazonaws.com/works/lupe.png);
+}
+
+.img-box-6 {
+    @include box;
+    background-image: url(https://kitwiissy.s3.amazonaws.com/works/soyRappi.png);
+}
+
+.box {
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.08);
+    transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+    border-bottom: 3px solid #fa3380;
+    animation: colorchangeBottom 9s infinite alternate;
+
+    &:focus,
+    &:hover {
+        box-shadow: 0 30px 30px rgba(0, 0, 0, 0.16);
+        transform: translate(0, -5px);
+    }
+}
+
+@keyframes colorchange {
+    0% { color: $color1; }
+    10% { color: $color2; }
+    20% { color: $color3; }
+    30% { color: $color4; }
+    40% { color: $color5; }
+    50% { color: $color6; }
+    60% { color: $color7; }
+    70% { color: $color8; }
+    80% { color: $color9; }
+    90% { color: $color10; }
+    100% { color: $color11; }
+}
+
+@keyframes colorchangeBottom {
+    0% { border-bottom: 3px solid $color1; }
+    10% { border-bottom: 3px solid $color2; }
+    20% { border-bottom: 3px solid $color3; }
+    30% { border-bottom: 3px solid $color4; }
+    40% { border-bottom: 3px solid $color5; }
+    50% { border-bottom: 3px solid $color6; }
+    60% { border-bottom: 3px solid $color7; }
+    70% { border-bottom: 3px solid $color8; }
+    80% { border-bottom: 3px solid $color9; }
+    90% { border-bottom: 3px solid $color10;}
+    100% { border-bottom: 3px solid $color11; }
 }

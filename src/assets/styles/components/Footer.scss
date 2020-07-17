@@ -1,8 +1,9 @@
 @import '../Color.scss', '../Mixins.scss';
 
 footer {
-    padding: 15px;
-    background-color: $blue;
+    padding: 20px;
+    background-color: $purple;
+    text-align: center;
 
     a {
         color: #fff;

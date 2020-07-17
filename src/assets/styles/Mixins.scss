@@ -2,11 +2,9 @@ $small-size: 480px;
 $medium-size: 768px;
 $large-sisze: 1024px;
 
-$breakpoints: (
-    small: $small-size,
+$breakpoints: (small: $small-size,
     medium: $medium-size,
-    large: $large-sisze
-) !default;
+    large: $large-sisze) !default;
 
 @mixin breakpoint($size-width, $size) {
     $breakpoint-value: map-get($breakpoints, $size);
@@ -14,4 +12,12 @@ $breakpoints: (
     @media screen and($size-width: $breakpoint-value) {
         @content;
     }
+}
+
+@mixin box {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
 }
