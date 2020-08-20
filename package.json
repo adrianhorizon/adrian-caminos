@@ -12,7 +12,8 @@
   "keywords": [
     "React",
     "Webpack",
-    "I18n"
+    "I18n",
+    "Jest"
   ],
   "author": "Adrían Camilo Caminos",
   "license": "ISC",
