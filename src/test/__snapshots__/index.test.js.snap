@@ -1,0 +1,482 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create should App 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="header"
+    name="home"
+  >
+    <nav
+      className="navbar"
+    >
+      <a
+        className="logo"
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="encuentrame como wiissy de adrian caminos"
+          src="https://kitwiissy.s3.amazonaws.com/wiissywhite.png"
+          width="40"
+        />
+      </a>
+      <input
+        className="hidden"
+        id="nav"
+        type="checkbox"
+      />
+      <label
+        className="nav-toggle"
+        htmlFor="nav"
+      >
+        <span />
+        <span />
+        <span />
+      </label>
+      <div
+        className="wrapper"
+      >
+        <ul
+          className="menu"
+        >
+          <li
+            className="menu-item"
+          >
+            <a
+              href="#home"
+            >
+              MENU.HOME
+            </a>
+          </li>
+          <li
+            className="menu-item"
+          >
+            <a
+              href="#works"
+            >
+              MENU.WORKS
+            </a>
+          </li>
+          <li
+            className="menu-item"
+          >
+            <a
+              href="https://medium.com/@adrianhorizon"
+              target="_blank"
+            >
+              MENU.BLOG
+            </a>
+          </li>
+          <li
+            className="menu-item"
+          >
+            <a
+              href="#contact"
+            >
+              MENU.CONTACT
+            </a>
+          </li>
+          <li
+            className="menu-item"
+          >
+            <a
+              href="#"
+            >
+              <select
+                className="container-select"
+                onChange={[Function]}
+                value="es"
+              >
+                <option
+                  value="es"
+                >
+                  LANGUAGE.SPANISH
+                </option>
+                <option
+                  value="en"
+                >
+                  LANGUAGE.ENGLISH
+                </option>
+                <option
+                  value="pt"
+                >
+                  LANGUAGE.PORTUGUESE
+                </option>
+              </select>
+              <img
+                alt="country"
+                className="image-country"
+                src="https://kitwiissy.s3.amazonaws.com/flags/colombia.png"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div
+      className="row-header"
+    >
+      <div
+        className="column-header"
+      >
+        <div
+          className="text-column"
+        >
+          <h1>
+            TITLE
+          </h1>
+          <div
+            className="button-style"
+          >
+            <a
+              className="container-button"
+              href="https://api.whatsapp.com/send?phone=573223112099&text=Hola%20En%20que%20te%20puedo%20ayudar&source=&data=&app_absent="
+              rel="noreferrer noopener"
+              target="_blank"
+            >
+              MENU.HIRE_ME
+            </a>
+          </div>
+          <div
+            className="social-align"
+          >
+            <div
+              className="buttons-container"
+            >
+              <a
+                className="button github"
+                href="http://github.com/adrianhorizon/"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                <i
+                  className="fab fa-github fa-lg"
+                />
+              </a>
+              <a
+                className="button linkedin"
+                href="https://www.linkedin.com/in/adrianhorizon/"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                <i
+                  className="fab fa-linkedin-in fa-lg"
+                />
+              </a>
+              <a
+                className="button medium"
+                href="https://medium.com/@adrianhorizon"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                <i
+                  className="fab fa-medium-m fa-lg"
+                />
+              </a>
+              <a
+                className="button youtube"
+                href="#"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                <i
+                  className="fab fa-youtube fa-lg"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="column-header"
+      >
+        <div
+          className="image-column"
+        />
+      </div>
+    </div>
+  </header>
+  <div
+    className="wrapper-figure"
+    name="works"
+  >
+    <section
+      className="columns-container-figure"
+    >
+      <div
+        className="main-container-figure"
+      >
+        <h2
+          className="color-developer-title"
+        >
+          ME.DEVELOPER
+        </h2>
+        <div
+          className="color-developer-parrafe"
+        >
+          <p>
+            ME.TITLE
+          </p>
+          <p>
+            ME.SUBTITLE
+          </p>
+          <p>
+            ME.DESCRIPTION
+          </p>
+          <p>
+            ME.PARRAFE
+          </p>
+        </div>
+      </div>
+      <div
+        className="main-container-figure"
+      >
+        <figure
+          className="container-code-figures floating-cards"
+        >
+          <div
+            className="card"
+          >
+            <ul
+              className="tabs"
+            >
+              <li
+                className="container-list-tabs container-list-tabs active"
+                onClick={[Function]}
+              >
+                Skills
+              </li>
+              <li
+                className="container-list-tabs "
+                onClick={[Function]}
+              >
+                Front end
+              </li>
+              <li
+                className="container-list-tabs "
+                onClick={[Function]}
+              >
+                Back end
+              </li>
+              <li
+                className="container-list-tabs "
+                onClick={[Function]}
+              >
+                DevOps
+              </li>
+            </ul>
+            <div
+              className="code-container"
+            >
+              <ul
+                className="code"
+                style={
+                  Object {
+                    "transform": "translateX(0%)",
+                  }
+                }
+              >
+                <li
+                  className="container-list-tabs active"
+                >
+                  <div>
+                    <p
+                      className="token keyword keywordAdd"
+                    >
+                      - 
+                      Scrum
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      className="token keyword keywordOdd"
+                    >
+                      - 
+                      Kanbam
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      className="token keyword keywordAdd"
+                    >
+                      - 
+                      Design UI
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      className="token keyword keywordOdd"
+                    >
+                      - 
+                      English
+                    </p>
+                  </div>
+                  <div>
+                    <p
+                      className="token keyword keywordAdd"
+                    >
+                      - 
+                      Español
+                    </p>
+                  </div>
+                  
+                  
+                  
+                </li>
+              </ul>
+            </div>
+            <div
+              className="shine"
+            />
+          </div>
+        </figure>
+      </div>
+    </section>
+  </div>
+  <div
+    className="container-section"
+  >
+    <h1
+      className="title-section"
+    >
+      WORK.TITLE
+    </h1>
+    <div
+      className="columns"
+    >
+      <div
+        className="box column"
+      >
+        <div
+          className="img-box-1"
+        />
+        <div
+          className="text"
+        >
+          Pokedex
+        </div>
+      </div>
+      <div
+        className="box column"
+      >
+        <div
+          className="img-box-2"
+        />
+        <div
+          className="text"
+        >
+          Citys Wheater
+        </div>
+      </div>
+      <div
+        className="box column"
+      >
+        <div
+          className="img-box-3"
+        />
+        <div
+          className="text"
+        >
+          Market Place
+        </div>
+      </div>
+    </div>
+    <div
+      className="columns"
+    >
+      <div
+        className="box column"
+      >
+        <div
+          className="img-box-4"
+        />
+        <div
+          className="text"
+        >
+          Lideres en la lucha
+        </div>
+      </div>
+      <div
+        className="box column"
+      >
+        <div
+          className="img-box-5"
+        />
+        <div
+          className="text"
+        >
+          Lupe
+        </div>
+      </div>
+      <div
+        className="box column"
+      >
+        <div
+          className="img-box-6"
+        />
+        <div
+          className="text"
+        >
+          SoyRappi
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <a
+      aria-label="Adrian caminos"
+      href="https://www.linkedin.com/in/adrianhorizon/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      © Adrían Camilo Caminos - 2020
+    </a>
+    <div
+      className="buttons-container"
+    >
+      <a
+        className="button github"
+        href="http://github.com/adrianhorizon/"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        <i
+          className="fab fa-github fa-lg"
+        />
+      </a>
+      <a
+        className="button linkedin"
+        href="https://www.linkedin.com/in/adrianhorizon/"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        <i
+          className="fab fa-linkedin-in fa-lg"
+        />
+      </a>
+      <a
+        className="button medium"
+        href="https://medium.com/@adrianhorizon"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        <i
+          className="fab fa-medium-m fa-lg"
+        />
+      </a>
+      <a
+        className="button youtube"
+        href="#"
+        rel="noreferrer noopener"
+        target="_blank"
+      >
+        <i
+          className="fab fa-youtube fa-lg"
+        />
+      </a>
+    </div>
+  </footer>
+</div>
+`;
