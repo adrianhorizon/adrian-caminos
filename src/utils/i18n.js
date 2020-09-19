@@ -1,9 +1,6 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-
-import es from '../i18n/es';
-import en from '../i18n/en';
-import pt from '../i18n/pt';
+import { es, en, pt } from '@adrianhorizon/translate-components';
 
 const resources = { es, en, pt };
 
